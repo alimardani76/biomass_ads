@@ -1,0 +1,10 @@
+sensitivity,condition,HKUST-1_pct,Cu-TDPAT_pct,Zeolite 13X_pct
+baseline,"eta=0.99, t_cycle=900s",0.0,22.86,77.14
+uniform eta,"eta=0.900, t_cycle=900s",0.0,22.86,77.14
+uniform eta,"eta=0.950, t_cycle=900s",0.0,22.86,77.14
+uniform eta,"eta=0.999, t_cycle=900s",0.0,22.86,77.14
+non-uniform eta,strict CO,0.0,22.86,77.14
+non-uniform eta,strict CO+CO2,0.0,22.86,77.14
+non-uniform eta,strict CO2 only,0.0,22.86,77.14
+cycle time,"t_cycle=600s, eta=0.99",0.0,22.86,77.14
+cycle time,"t_cycle=1500s, eta=0.99",0.0,22.86,77.14

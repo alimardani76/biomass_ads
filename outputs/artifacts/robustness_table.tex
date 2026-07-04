@@ -1,0 +1,23 @@
+\begin{table}[htbp]
+\centering
+\caption{Sensitivity of the winner-map partition to removal factor $\eta_i$ and cycle time $t_{\mathrm{cycle}}$. Uniform $\eta$ and $t_{\mathrm{cycle}}$ scaling preserves the partition exactly because all adsorbents' productivities scale by identical factors. Non-uniform $\eta$ (impurity-specific removal targets) is the physically meaningful perturbation: the partition remains within $\pm$X\% of baseline under industrially realistic non-uniform removal targets.}
+\label{tabS:robustness}
+\small
+\begin{adjustbox}{max width=\textwidth}
+\begin{tabular}{llccc}
+\toprule
+Sensitivity & Condition & HKUST-1 (\%) & Cu-TDPAT (\%) & Zeolite~13X (\%) \\
+\midrule
+baseline & eta=0.99, t_cycle=900s & 0.00 & 22.86 & 77.14 \\
+uniform eta & eta=0.900, t_cycle=900s & 0.00 & 22.86 & 77.14 \\
+uniform eta & eta=0.950, t_cycle=900s & 0.00 & 22.86 & 77.14 \\
+uniform eta & eta=0.999, t_cycle=900s & 0.00 & 22.86 & 77.14 \\
+non-uniform eta & strict CO & 0.00 & 22.86 & 77.14 \\
+non-uniform eta & strict CO+CO2 & 0.00 & 22.86 & 77.14 \\
+non-uniform eta & strict CO2 only & 0.00 & 22.86 & 77.14 \\
+cycle time & t_cycle=600s, eta=0.99 & 0.00 & 22.86 & 77.14 \\
+cycle time & t_cycle=1500s, eta=0.99 & 0.00 & 22.86 & 77.14 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table}

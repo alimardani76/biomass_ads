@@ -1,0 +1,42 @@
+{
+  "model_type": "XGBoost tree-ensemble regressors",
+  "features": [
+    "Steam - Mass Flow",
+    "Gasif-2 - Temperature",
+    "T_adsorption(K)",
+    "ads_HKUST-1",
+    "ads_Cu-TDPAT",
+    "ads_Zeolite 13X"
+  ],
+  "targets": [
+    "MOF mass -CH4",
+    "MOF mass -CO",
+    "MOF mass -CO2",
+    "Productivity-H2",
+    "Energy Consumption"
+  ],
+  "splits": {
+    "random": "random 85/15 row split",
+    "grouped": "gasifier-scenario grouped 85/15"
+  },
+  "xgboost_parameters": {
+    "n_estimators": 600,
+    "max_depth": 5,
+    "learning_rate": 0.04,
+    "subsample": 0.85,
+    "colsample_bytree": 0.85,
+    "objective": "reg:squarederror",
+    "random_state": 442,
+    "n_jobs": -1,
+    "reg_lambda": 1.0,
+    "reg_alpha": 0.0,
+    "tree_method": "hist"
+  },
+  "shap_sample_size": 3000,
+  "cache_files": {
+    "metrics": "xgb_metrics.csv",
+    "predictions": "xgb_predictions_all.csv",
+    "shap": "shap_mean_abs_all.csv",
+    "models_dir": "models"
+  }
+}

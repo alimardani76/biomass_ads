@@ -1,0 +1,61 @@
+split,target,feature,mean_abs_shap
+random,MOF mass -CH4,Steam - Mass Flow,139.29200744628906
+random,MOF mass -CH4,Gasif-2 - Temperature,195.8463592529297
+random,MOF mass -CH4,T_adsorption(K),49.225364685058594
+random,MOF mass -CH4,ads_HKUST-1,3.100412368774414
+random,MOF mass -CH4,ads_Cu-TDPAT,12.185054779052734
+random,MOF mass -CH4,ads_Zeolite 13X,40.78777313232422
+random,MOF mass -CO,Steam - Mass Flow,4.789429187774658
+random,MOF mass -CO,Gasif-2 - Temperature,0.16141803562641144
+random,MOF mass -CO,T_adsorption(K),107.11003875732422
+random,MOF mass -CO,ads_HKUST-1,119.3697738647461
+random,MOF mass -CO,ads_Cu-TDPAT,16.736230850219727
+random,MOF mass -CO,ads_Zeolite 13X,27.301958084106445
+random,MOF mass -CO2,Steam - Mass Flow,0.6821271777153015
+random,MOF mass -CO2,Gasif-2 - Temperature,0.018071407452225685
+random,MOF mass -CO2,T_adsorption(K),41.72491455078125
+random,MOF mass -CO2,ads_HKUST-1,2.0453500747680664
+random,MOF mass -CO2,ads_Cu-TDPAT,2.3776276111602783
+random,MOF mass -CO2,ads_Zeolite 13X,6.79793119430542
+random,Productivity-H2,Steam - Mass Flow,0.4351930618286133
+random,Productivity-H2,Gasif-2 - Temperature,0.4575051963329315
+random,Productivity-H2,T_adsorption(K),0.6468555927276611
+random,Productivity-H2,ads_HKUST-1,0.7416317462921143
+random,Productivity-H2,ads_Cu-TDPAT,0.19060996174812317
+random,Productivity-H2,ads_Zeolite 13X,0.2848159968852997
+random,Energy Consumption,Steam - Mass Flow,6.341274261474609
+random,Energy Consumption,Gasif-2 - Temperature,7.881798267364502
+random,Energy Consumption,T_adsorption(K),13.77129077911377
+random,Energy Consumption,ads_HKUST-1,2.1252434253692627
+random,Energy Consumption,ads_Cu-TDPAT,0.5698977112770081
+random,Energy Consumption,ads_Zeolite 13X,2.755295991897583
+grouped,MOF mass -CH4,Steam - Mass Flow,137.07154846191406
+grouped,MOF mass -CH4,Gasif-2 - Temperature,192.85272216796875
+grouped,MOF mass -CH4,T_adsorption(K),47.621803283691406
+grouped,MOF mass -CH4,ads_HKUST-1,2.93422794342041
+grouped,MOF mass -CH4,ads_Cu-TDPAT,11.705296516418457
+grouped,MOF mass -CH4,ads_Zeolite 13X,40.38636016845703
+grouped,MOF mass -CO,Steam - Mass Flow,4.792952060699463
+grouped,MOF mass -CO,Gasif-2 - Temperature,0.16207213699817657
+grouped,MOF mass -CO,T_adsorption(K),104.69457244873047
+grouped,MOF mass -CO,ads_HKUST-1,117.62560272216797
+grouped,MOF mass -CO,ads_Cu-TDPAT,17.200969696044922
+grouped,MOF mass -CO,ads_Zeolite 13X,27.468719482421875
+grouped,MOF mass -CO2,Steam - Mass Flow,0.6809942722320557
+grouped,MOF mass -CO2,Gasif-2 - Temperature,0.017194218933582306
+grouped,MOF mass -CO2,T_adsorption(K),41.52082824707031
+grouped,MOF mass -CO2,ads_HKUST-1,2.0459351539611816
+grouped,MOF mass -CO2,ads_Cu-TDPAT,2.3549976348876953
+grouped,MOF mass -CO2,ads_Zeolite 13X,6.783097743988037
+grouped,Productivity-H2,Steam - Mass Flow,0.4388585090637207
+grouped,Productivity-H2,Gasif-2 - Temperature,0.4547480046749115
+grouped,Productivity-H2,T_adsorption(K),0.6438629627227783
+grouped,Productivity-H2,ads_HKUST-1,0.7337480187416077
+grouped,Productivity-H2,ads_Cu-TDPAT,0.19913281500339508
+grouped,Productivity-H2,ads_Zeolite 13X,0.28573745489120483
+grouped,Energy Consumption,Steam - Mass Flow,6.408352375030518
+grouped,Energy Consumption,Gasif-2 - Temperature,7.8950653076171875
+grouped,Energy Consumption,T_adsorption(K),13.913897514343262
+grouped,Energy Consumption,ads_HKUST-1,2.133687973022461
+grouped,Energy Consumption,ads_Cu-TDPAT,0.5832181572914124
+grouped,Energy Consumption,ads_Zeolite 13X,2.6962180137634277

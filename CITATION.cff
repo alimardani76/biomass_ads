@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the associated manuscript."
+title: "Biomass gasification determines MOF-zeolite ranking for hydrogen purification: an interpretable regime-dependent screening"
+authors:
+  - family-names: Soltani
+    given-names: Zahra
+    affiliation: "University of Mohaghegh Ardabili"
+  - family-names: Abaei
+    given-names: Shayan
+    affiliation: "University of Tehran"
+  - family-names: Hoseinzadeh
+    given-names: Mohammadsaleh
+    affiliation: "Ferdowsi University of Mashhad"
+  - family-names: Hooriabad Saboor
+    given-names: Fahimeh
+    affiliation: "University of Mohaghegh Ardabili"
+    email: f.saboor@uma.ac.ir
+  - family-names: Alimardani
+    given-names: Hosein
+    affiliation: "University of Tehran"
+  - family-names: Amouzesh
+    given-names: Seyed Parsa
+    affiliation: "Illinois Institute of Technology"
+  - family-names: Asgari
+    given-names: Mehrdad
+    affiliation: "Lucy Cavendish College, University of Cambridge"
+    email: ma2000@cam.ac.uk
+version: "1.0.0"
+date-released: 2026-07-04
+license: MIT
+repository-code: "https://github.com/alimardani76/biomass_ads"
