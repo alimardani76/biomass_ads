@@ -1,0 +1,5 @@
+component,simulation_1_mole_fraction,simulation_1_mol_pct,bassyouni_2014_mol_pct,difference_pp,workbook_cell,gasifier_temperature_C,pressure_kPa,biomass_kg_h,steam_kg_h,air_kg_h,simulation_1_S_B,literature_S_B
+H2,0.581774250354041,58.18,56.27,1.91,Compositions!AF5,800,100,8,16,40,2.0,1.5
+CO,0.226501867980734,22.65,21.71,0.94,Compositions!AF10,800,100,8,16,40,2.0,1.5
+CO2,0.157020403444267,15.70,18.24,-2.54,Compositions!AF9,800,100,8,16,40,2.0,1.5
+CH4,0.0347034782209558,3.47,3.78,-0.31,Compositions!AF12,800,100,8,16,40,2.0,1.5

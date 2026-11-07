@@ -163,15 +163,52 @@ If you delete `outputs/` and rerun the four commands above, you get the same fig
 
 ---
 
+## Reviewer revision additions
+
+The final [main manuscript and SI sources](manuscript/README.md) preserve the
+Reviewer 1-3 revision, with one highlight switch per document. The new
+[Fig. S19](outputs/figures/si/tsa_temperature/figS19_r1c5.pdf) is redrawn from
+the existing source CSVs using:
+
+```bash
+python scripts/r1c5_minimal.py
+```
+
+The saved-score scope is 20,301 gasifier scenarios x 10 desorption set-points x
+3 materials (609,030 rows), at fixed adsorption temperature 298 K and pressure
+1 bar. The original, all ten fixed-temperature, and per-material optimized
+comparisons each select 4,640 Cu-TDPAT, 15,661 Zeolite 13X and 0 HKUST-1
+winners: zero changes across 203,010 fixed-temperature comparisons and zero
+under optimization. Temperature affects productivity; only winner identity
+was unchanged. Raw `T_adsorption(K)` is a legacy name for the swept
+desorption/regeneration temperature and is preserved in the data and scripts.
+No large temperature scenario-map CSV is needed for this redraw.
+
+[Reference gasifier and X-103 evidence](data/revision_validation/README.md)
+includes one original workbook, the component-split export and the traceable
+four-gas comparison. The unchanged [independent audit script](scripts/r1c5_independent_audit.py)
+and [short report](reports/R1C5_zero_change_audit.md) require extra local legacy
+Excel files and analysis artifacts detailed in that provenance note; they are
+not fully runnable from Git alone. See [executed revision checks](reports/revision_verification.md).
+
+Limits remain: the adsorption/IAST cross-check is model-based, not experimental;
+no independent matched-condition validation of production P-1 is available;
+no rationale for its R7/R9 zero conversions is documented; the PI decision on
+retaining the model-only 100% solid-carbon disappearance result is pending;
+and the methane-zero convention limits physical interpretation of the winner
+boundary. No numerical IAST comparison was added in this revision.
+
+---
+
 ## Data
 
 ### `data/book1.csv`
 
-Aspen HYSYS output for 20,301 upstream scenarios. Sweeps gasifier temperature (650–850 °C) and steam feed (50–150 kg/h) on a 141 × 143 grid. See `DATA_DICTIONARY.md` for column definitions.
+Aspen HYSYS output for 20,301 upstream scenarios. Sweeps gasifier temperature (650–850 °C) and steam feed (50–150 kg/h) on a 201 × 101 grid. See `DATA_DICTIONARY.md` for column definitions.
 
 ### `data/TSA_DATA.csv`
 
-Equilibrium TSA scoring atlas. 609,030 rows = 20,301 scenarios × 10 T_ads states × 3 adsorbents. Each row gives adsorbent mass requirements (per limiting impurity), specific hydrogen productivity, and regeneration energy.
+Equilibrium TSA scoring atlas. 609,030 rows = 20,301 scenarios × 10 desorption set-points (`T_adsorption(K)` is the legacy column name) × 3 adsorbents. Each row gives adsorbent mass requirements (per limiting impurity), specific hydrogen productivity, and regeneration energy.
 
 ### `data/PSA_DATA.csv`
 
@@ -205,7 +242,7 @@ The XGBoost surrogate is used for feature attribution over the computed atlas vi
 
 ## What is not included
 
-- **Manuscript-draft files** and exploratory development notebooks are intentionally excluded to keep this release focused on reproducibility of the published results.
+- **Earlier manuscript drafts** and exploratory development notebooks are intentionally excluded to keep this release focused on reproducibility of the published results.
 - **HYSYS simulation files** (`.hsc`, `.bkp`) are not included. The workbook `hysys-rev-Final.xlsx` provides the exported gasifier scenario grid, which is what the scoring calculation actually uses.
 
 ---
